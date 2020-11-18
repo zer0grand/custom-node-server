@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Dummy Client</title>
+ <link rel="stylesheet" type="text/css" href="css/reset.css">
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+
+<body>
+    <table id="server-lobby-table">
+        <tr>
+            <th>lobbyId</th>
+            <th>userCount</th>
+        </tr>
+    </table>
+
+    <table id="server-connection-table">
+        <tr>
+            <th>connection status</th>
+        </tr>
+        <tr>
+            <td id="connection-status" style="color:red;">disconnected</td>
+        </tr>
+    </table>
+
+    <div id="local-user-info">
+        <table>
+            <tbody id="local-user-data-table">
+                <tr>
+                    <th>user-id</th>
+                </tr>
+                <tr>
+                    <td>user-id</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br><br>
+    
+    <div id="remote-user-info">
+        <table>
+            <tbody id="remote-user-data-table">
+
+            </tbody>
+        </table>
+    </div>
+
+    <br><br>
+
+    <div id="button-group">
+        <button onclick="CreateLobby()">create lobby</button>
+        <br>
+        <button onclick="JoinLobby()">join lobby</button>
+        <input id="join-lobby-text" type="text"></input>
+        <br>
+        <button onclick="LeaveLobby()">leave lobby</button>
+        <br>
+        <button onclick="ListLobbies()">refresh lobbies</button>
+        <br><br>
+        <textarea id="user-game-data" placeholder="json data to relay">{"hello":"world"}</textarea>
+        <br>
+        <button onclick="SendData()">send data to other players</button>
+    </div>
+</body>
+
+<script src="js/dummy-elements.js"></script>
+<script src="js/dummy.js"></script>
+</html>

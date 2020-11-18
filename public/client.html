@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Ethereal Matter Client Emulator</title>
+ <link rel="stylesheet" type="text/css" href="css/reset.css">
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+
+<body>
+    <table id="server-lobby-table">
+        <tr>
+            <th>lobbies</th>
+        </tr>
+    </table>
+
+    <div id="server-info">
+        <table>
+            <tbody id="server-info-table">
+                <tr>
+                    <th>connection status</th>
+                    <th>user-id</th>
+                    <th>user-name</th>
+                    <th>lobby-id</th>
+                    <th>gamemode</th>
+                </tr>
+                <tr>
+                    <td id="connection-status" style="color:red;">disconnected</td>
+                    <td id="user-id">user-id</td>
+                    <td id="user-name">user-name</td>
+                    <td id="lobby-id">lobby-id</td>
+                    <td id="gamemode">gamemode</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+    <div id="users-info">
+        <table>
+            <tbody id="users-info-table">
+                <tr>
+                    <th>user-id</th>
+                    <th>user-name</th>
+                    <th>gamemode</th>
+                    <th>relay</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+    <div id="button-group">
+        <button onclick="CreateLobby()">create lobby</button>
+        <button onclick="LeaveLobby()">leave lobby</button>
+        <br><br>
+        <textarea id="relay-data" placeholder="json data to relay">{"hello":"world"}</textarea>
+        <br>
+        <button onclick="SendData()">send data to other players</button>
+    </div>
+</body>
+
+<script src="js/client-emulator-elements.js"></script>
+<script src="js/client-emulator.js"></script>
+</html>

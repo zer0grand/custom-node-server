@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Ethereal Matter Server Viewer</title>
+ <link rel="stylesheet" type="text/css" href="css/reset.css">
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+
+<body>
+    <table id="user-info">
+        <tr>
+            <th>connection status</th>
+            <td id="user-connection-status" style="color:red;">disconnected</td>
+        </tr>
+        <tr>
+            <th>user-id</th>
+            <td id="user-user-id">null</td>
+        </tr>
+        <tr>
+            <th>user-name</th>
+            <td id="user-user-name">null</td>
+        </tr>
+        <tr>
+            <th>lobby-id</th>
+            <td id="user-lobby-id">null</td>
+        </tr>
+        <tr>
+            <th>gamemode</th>
+            <td id="user-gamemode">null</td>
+        </tr>
+    </table>
+
+    <table id="server-lobby-table">
+        <tr>
+            <th>lobbies</th>
+        </tr>
+    </table>
+
+    <div id="server-info">
+        <table>
+            <tbody id="server-info-table">
+                <tr>
+                    <th>user-id</th>
+                    <th>user-name</th>
+                    <th>lobby-id</th>
+                    <th>gamemode</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+
+<script src="js/server-viewer-elements.js"></script>
+<script src="js/server-viewer.js"></script>
+</html>

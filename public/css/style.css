@@ -1,0 +1,84 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#user-info {
+    width: 300px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#server-lobby-table {
+    width: 300px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#server-info, #local-user-info, #remote-user-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#server-connection-table {
+    width: 300px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.lobby {
+    cursor: pointer;
+}
+
+#overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0,0,0,.4);
+    pointer-events: none;
+}
+
+#overlay > * {
+    pointer-events: all;
+}
+
+#overlay-button {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    z-index: 101;
+    margin-bottom: 20px;
+}
+
+#scene {
+    position: absolute;
+}
